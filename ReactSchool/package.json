@@ -1,0 +1,9 @@
+{
+  "name": "react-school",
+  "version": "0.0.0",
+  "description": "ReactSchool",
+  "main": "server.js",
+  "author": {
+    "name": "zocca"
+  }
+}
