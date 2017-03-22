@@ -21,3 +21,22 @@ gulp.task("copy", ["bundle"], function () {
 gulp.task("default", ["copy"], function () {
     console.log("Gulp completed...");
 });
+
+gulp.task("bundleMenu", function () {
+    return browserify({
+        entries: "./app/menu.jsx",
+        debug: true
+    }).transform(reactify)
+        .bundle()
+        .pipe(source("menu.js"))
+        .pipe(gulp.dest("app/dist"))
+});
+
+gulp.task("copyMenu", ["bundleMenu"], function () {
+    return gulp.src(["app/menu.html", "app/lib/bootstrap-css/css/bootstrap.min.css", "app/menustyle.css"])
+        .pipe(gulp.dest("app/dist"));
+});
+
+gulp.task("defaultMenu", ["copyMenu"], function () {
+    console.log("Gulp completed...");
+});

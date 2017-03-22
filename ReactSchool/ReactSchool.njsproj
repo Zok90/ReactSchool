@@ -34,6 +34,12 @@
     <Compile Include="app\components\AddSchool.jsx">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="app\components\navigation.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="app\components\navigationeNew.js">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="app\dispatcher.js">
       <SubType>Code</SubType>
     </Compile>
@@ -58,6 +64,9 @@
     <Content Include=".bowerrc">
       <SubType>Code</SubType>
     </Content>
+    <Content Include="app\menu.jsx">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="app\components\SchoolInfo.jsx">
       <SubType>Code</SubType>
     </Content>
@@ -68,6 +77,12 @@
       <SubType>Code</SubType>
     </Content>
     <Content Include="app\main.jsx">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="app\menu.html">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="app\menustyle.css">
       <SubType>Code</SubType>
     </Content>
     <Content Include="app\style.css">
