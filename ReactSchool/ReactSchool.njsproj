@@ -34,12 +34,6 @@
     <Compile Include="app\components\AddSchool.jsx">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="app\components\navigation.js">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="app\components\navigationeNew.js">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="app\dispatcher.js">
       <SubType>Code</SubType>
     </Compile>

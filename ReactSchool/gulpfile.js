@@ -3,7 +3,7 @@ var browserify = require("browserify");
 var reactify = require("reactify");
 var source = require("vinyl-source-stream");
 
-gulp.task("bundle", function () {
+/*gulp.task("bundle", function () {
     return browserify({
         entries: "./app/main.jsx",
         debug: true
@@ -20,9 +20,9 @@ gulp.task("copy", ["bundle"], function () {
 
 gulp.task("default", ["copy"], function () {
     console.log("Gulp completed...");
-});
+});*/
 
-gulp.task("bundleMenu", function () {
+gulp.task("bundle", function () {
     return browserify({
         entries: "./app/menu.jsx",
         debug: true
@@ -32,11 +32,11 @@ gulp.task("bundleMenu", function () {
         .pipe(gulp.dest("app/dist"))
 });
 
-gulp.task("copyMenu", ["bundleMenu"], function () {
+gulp.task("copy", ["bundle"], function () {
     return gulp.src(["app/menu.html", "app/lib/bootstrap-css/css/bootstrap.min.css", "app/menustyle.css"])
         .pipe(gulp.dest("app/dist"));
 });
 
-gulp.task("defaultMenu", ["copyMenu"], function () {
+gulp.task("default", ["copy"], function () {
     console.log("Gulp completed...");
 });
